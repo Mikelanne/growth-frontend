@@ -1,6 +1,7 @@
 //this cannot be functional. this will be in charge of the local state for the plants. make another file for plants that will be functional and display this component
 
 import React, { Component } from 'react';
+import PlantCardBack from "./PlantCardBack"
 
 class PlantCard extends Component {
 
@@ -21,12 +22,15 @@ class PlantCard extends Component {
     //would like to incorporate routes so that when you click on a plant it displays just that plant's information. Will be able to notate last time the plant was watered and resoiled. (maybe not that might be too tricky. Starting with the basics.)
     //having a hard time finding images for the cards. May just have to do nice styling for the name of the plant
 
+
+    // this is where we can implement routes to get to the details of the card.
+
+
     render(){
-        // debugger;
         return(
-            <div className='movie-card'>
-                {this.state.nickname} <br/>
-                {this.state.name}
+            <div className='plant-card'>
+                <h3>{this.state.nickname}</h3><br/>
+                <h1>{this.state.name}</h1>
             </div>
         )
     }
