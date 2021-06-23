@@ -1,18 +1,12 @@
 import { Component } from "react";
 import PlantCard from "../components/PlantCard"
 import { connect } from 'react-redux'
+import {fetchPlants} from '../actions/plantActions'
 
 class PlantsContainer extends Component {
 
     componentDidMount(){
-        const url = "http://localhost:3001/plants"
-
-        fetch(url)
-        .then(resp => resp.json())
-        .then(json => {
-            const plants = json
-            this.props.setPlants(plants)
-        })
+        this.props.fetchPlants()
     }
 
     makePlantCards(){
@@ -47,7 +41,7 @@ const mapStateToProps = (state) => {
 
 const mapDispatchToProps = dispatch => {
     return {
-        setPlants: (plants) => dispatch({type: "GOT_PLANTS", payload: plants})
+        fetchPlants: () => dispatch(fetchPlants())
     }
 }
 
