@@ -2,6 +2,9 @@
 
 import React, { Component } from 'react';
 import PlantCardBack from "./PlantCardBack"
+import {BrowserRouter as Router, Switch, Route, Link} from 'react-router-dom'
+import plantReducer from '../reducers/plantReducer';
+import Card from 'react-bootstrap/Card'
 
 class PlantCard extends Component {
 
@@ -28,10 +31,24 @@ class PlantCard extends Component {
 
     render(){
         return(
-            <div className='plant-card'>
-                <h3>{this.state.nickname}</h3><br/>
-                <h1>{this.state.name}</h1>
-            </div>
+            // <Router>
+            // <div className="plant-card">
+            //     <h3>{this.state.nickname} the {this.state.name}</h3>
+            //     {/* <Link to={`/plants/${this.state.id}`}>{this.state.name}</Link> */}
+            // </div>
+            // </Router>
+            <Card style={{ width: '18rem' }} >
+                <Card.Body>
+                    <Card.Title>{this.props.nickname} the {this.props.name}</Card.Title>
+                    <Card.Text>
+                    <b>Care level:</b> {this.props.careLevel}<br/>
+                    <b>Light:</b> {this.props.light}<br/>
+                    <b>Soil:</b> {this.props.soil}<br/>
+                    <b>Water:</b> {this.props.water}<br/>
+                    </Card.Text>
+                    {/* <Button variant="primary">Go somewhere</Button> */}
+                </Card.Body>
+            </Card>
         )
     }
 

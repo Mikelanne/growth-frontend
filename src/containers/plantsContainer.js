@@ -2,6 +2,8 @@ import { Component } from "react";
 import PlantCard from "../components/PlantCard"
 import { connect } from 'react-redux'
 import {fetchPlants} from '../actions/plantActions'
+import Container from 'react-bootstrap/Container'
+import Row from 'react-bootstrap/Row'
 
 class PlantsContainer extends Component {
 
@@ -26,8 +28,12 @@ class PlantsContainer extends Component {
     render(){
         return (
             <div>
-                Plants Container
-                {this.makePlantCards()}
+                <h1>All of your plants</h1>
+            <Container>
+                <Row>
+                    {this.makePlantCards()}
+                </Row>
+            </Container>
             </div>
         )
     }
