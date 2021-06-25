@@ -27,8 +27,9 @@ reportWebVitals();
 
 
 
-   {/* <Router>
-      <Switch>
-        <Route exact path="/" component={Home} />
-        <Route exact path="/plants" component={plantsContainer} />
-      </Switch> */}
+  //  {/* <Router>
+  //     <Switch>
+  //       <Route exact path="/" component={Home} />
+  //       <Route exact path="/plants" component={plantsContainer} />
+  //     </Switch> */
+  //   <Router /> 
