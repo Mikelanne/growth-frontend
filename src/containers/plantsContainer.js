@@ -5,6 +5,7 @@ import {fetchPlants} from '../actions/plantActions'
 import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
+import NavBar from '../components/navBar'
 
 class PlantsContainer extends Component {
 
@@ -29,6 +30,7 @@ class PlantsContainer extends Component {
     render(){
         return (
             <div>
+                <NavBar />
                 <h1>All of your plants</h1>
             <Container>
                 <Row>
