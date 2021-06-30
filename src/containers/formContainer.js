@@ -7,8 +7,9 @@ class FormContainer extends Component {
     render(){
         return(
             <div className="form-container">
-                <NavBar />
-                < NewPlantForm />
+                <NavBar /> <br />
+                <h2>Add a New Plant to Your Family</h2>
+                <NewPlantForm />
             </div>
         )
     }
