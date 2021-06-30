@@ -1,5 +1,6 @@
 import Nav from "react-bootstrap/nav"
-import {BrowserRouter as Router, Switch, Route, Link} from 'react-router-dom'
+import {Link} from 'react-router-dom'
+import Button from "react-bootstrap/button"
 
 const NavBar = () => {
 
@@ -7,7 +8,9 @@ const NavBar = () => {
     <Nav variant="tabs" defaultActiveKey="/plants">
         <Nav.Item>
             <Nav.Link>
-                <Link class="text-success" to="/plants">Plants</Link>
+                <Link to="/plants" >
+                    <Button variant="outline-success">Plants</Button>
+                </Link>
             </Nav.Link>
         </Nav.Item>
         {/* <Nav.Item>
@@ -17,7 +20,9 @@ const NavBar = () => {
         </Nav.Item> */}
         <Nav.Item>
             <Nav.Link>
-                <Link class="text-success" to="/plants/new">Add a New Plant</Link>
+                <Link to="/plants/new">
+                    <Button variant="outline-success">Add a New Plant</Button>
+                </Link>
             </Nav.Link>
         </Nav.Item>
     </Nav>
