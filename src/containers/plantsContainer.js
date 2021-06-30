@@ -31,7 +31,7 @@ class PlantsContainer extends Component {
         return (
             <div>
                 <NavBar />
-                <h1>All of your plants</h1>
+                <h1>Your Plants</h1>
             <Container>
                 <Row>
                     {this.makePlantCards()}

@@ -7,17 +7,17 @@ const NavBar = () => {
     <Nav variant="tabs" defaultActiveKey="/plants">
         <Nav.Item>
             <Nav.Link>
-                <Link to="/plants">Plants</Link>
+                <Link class="text-success" to="/plants">Plants</Link>
             </Nav.Link>
         </Nav.Item>
-        <Nav.Item>
+        {/* <Nav.Item>
             <Nav.Link eventKey="disabled" disabled>
                 Maintainence
             </Nav.Link>
-        </Nav.Item>
+        </Nav.Item> */}
         <Nav.Item>
             <Nav.Link>
-                <Link to="/plants/new">Add a New Plant</Link>
+                <Link class="text-success" to="/plants/new">Add a New Plant</Link>
             </Nav.Link>
         </Nav.Item>
     </Nav>
