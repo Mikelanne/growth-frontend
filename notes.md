@@ -2,13 +2,14 @@ GOALS:
 [] New plant form
 [] Nav Bar
 [] Maintainence page (last time watered and soil changed, able to update)
-[] Adjust styling
+[] Adjust styling (colors, placement, cards)
 
 
 
 STRETCH GOALS:
 [] Front and back of cards with a show page
 [] Users
+[] Images
 
 
 Requirements
