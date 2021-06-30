@@ -11,3 +11,22 @@ export const fetchPlants = () => {
         })
     }
 }
+
+export const createPlant = (plant) => {
+    return (dispatch) => {
+        const configObj = {
+            method: 'POST',
+            headers: {
+                "Content-Type": "application/json",
+                "Accepts": "application/json"
+            },
+            body: JSON.stringify(plant)
+        }
+
+        fetch(url, configObj)
+        .then(resp => resp.json())
+        .then(json => {
+            console.log(json)
+        })
+    }
+}

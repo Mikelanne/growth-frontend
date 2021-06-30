@@ -8,9 +8,6 @@ import { createStore, applyMiddleware } from 'redux';
 import thunk from 'redux-thunk';
 import plantReducer from './reducers/plantReducer'
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Home from './components/home';
-import plantsContainer from './containers/plantsContainer';
-import {BrowserRouter as Router, Switch, Route, Link} from 'react-router-dom'
 
 const store = createStore(plantReducer, applyMiddleware(thunk))
 

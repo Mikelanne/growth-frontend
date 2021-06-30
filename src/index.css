@@ -7,10 +7,10 @@ body, html, #root {
   user-select: none;
 }
 
-.plant-form {
+/* .plant-form {
   padding-left: 200px;
   padding-right: 200px
-}
+} */
 
 h1{
   text-align: center;
