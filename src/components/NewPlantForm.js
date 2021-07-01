@@ -16,18 +16,27 @@ class NewPlantForm extends Component {
     }
 
     handleChange = (event) => {
-        console.log(event)
-        
-        const name = event.target.name
-        const value = event.target.value
 
-        this.setState({
-            [name]: value
-        })
+        if (event.target.name !== "toxicToPets"){
+            const name = event.target.name
+            const value = event.target.value
+            this.setState({
+                [name]: value
+            }, console.log(this.state))
+        } else {
+            const name = event.target.name
+            const value = true
+            this.setState({
+                [name]: value
+            }, console.log(this.state))
+        }
     }
+      
 
     handleOnSubmit = (event) => {
         event.preventDefault()
+
+        console.log(this.state)
 
         this.props.createPlant(this.state)
 
@@ -85,10 +94,10 @@ class NewPlantForm extends Component {
                     <input type="text" name="soil" value={this.state.soil} onChange={this.handleChange}/>
             </Form.Group>
 
-            {/* <Form.Group>
+            <Form.Group>
                 <Form.Label>Check this box if the plant is poisonous to pets</Form.Label><br />
                     <input type="checkbox" name="toxicToPets" value={this.state.toxicToPets} onChange={this.handleChange}/>
-            </Form.Group> */}
+            </Form.Group>
             
              <input type="submit" value="Add Plant"/>
     

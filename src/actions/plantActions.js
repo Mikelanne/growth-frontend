@@ -23,6 +23,8 @@ export const createPlant = (plant) => {
             body: JSON.stringify(plant)
         }
 
+        // debugger;
+
         fetch(url, configObj)
         .then(resp => resp.json())
         .then(json => {
