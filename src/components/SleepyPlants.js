@@ -3,7 +3,7 @@ import Table from "react-bootstrap/table"
 const SleepyPlants = () => {
     return(
         <div className="table">
-            <h4>Plants that promote sleep and peace</h4>
+            <h4>Plants That Promote Sleep and Peace</h4>
            <Table striped bordered hover size="sm">
                 <thead>
                     <tr>
