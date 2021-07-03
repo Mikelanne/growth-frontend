@@ -3,7 +3,7 @@ import PlantsContainer from './containers/plantsContainer'
 import Home from './components/home'
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom'
 import FormContainer from './containers/formContainer';
-import PlantCategories from './components/PlantCategories'
+import PlantCategoryContainer from './containers/PlantCategoryContainer';
 
 function App() {
   return (
@@ -20,7 +20,7 @@ function App() {
           <FormContainer />
         </Route>
         <Route exact path="/plants/info">
-          <PlantCategories />
+          <PlantCategoryContainer />
         </Route>
       </Switch>
       </Router>
