@@ -4,7 +4,6 @@ import { connect } from 'react-redux'
 import {fetchPlants} from '../actions/plantActions'
 import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
-import Col from 'react-bootstrap/Col'
 import NavBar from '../components/navBar'
 
 class PlantsContainer extends Component {
@@ -19,7 +18,7 @@ class PlantsContainer extends Component {
             id={plant.id}
             nickname={plant.nickname}
             name={plant.name}
-            careLevel={plant.care_level}
+            difficulty={plant.difficulty}
             light={plant.light}
             water={plant.water}
             soil={plant.soil}
@@ -30,8 +29,8 @@ class PlantsContainer extends Component {
     render(){
         return (
             <div>
-            <NavBar />
-            <h1>Your Plants</h1>
+            <NavBar /><br />
+            <h2>Your Plant Family</h2>
             <Container fluid="md">
                 <Row>
                     {this.makePlantCards()}

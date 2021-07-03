@@ -22,22 +22,34 @@ h2{
   font-family: Didot, serif;
 }
 
+/* h3{
+  font-style: oblique;
+} */
+
+h4 {
+  color: green;
+  font-style: oblique;
+}
+
 .plant-card {
   text-align: center;
   border: #14913e solid 2px;
-  padding: 1rem;
-  width: 10rem;
-  height: 10rem;
   display: inline-grid;
-  margin: 2rem;
+  margin: 1rem;
   box-shadow: 4px 4px #14913e;
-  /* border-radius: 15px 50px; */
 }
 
 .plant-card:hover {
   transform: scale(1.05)
 }
 
-/* .plant-card:active {
-  transform: rotateY(180deg) scale(1.05);
-} */
+.label {
+  color: green;
+  font-style: oblique;
+  font-size: 16px;
+}
+
+.title {
+  color: green;
+  font-style: oblique;
+}

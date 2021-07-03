@@ -8,7 +8,7 @@ class FormContainer extends Component {
         return(
             <div className="form-container">
                 <NavBar /> <br />
-                <h2>Add a New Plant to Your Family</h2>
+                <h2>Add a New Plant</h2>
                 <NewPlantForm />
             </div>
         )

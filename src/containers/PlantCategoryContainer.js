@@ -10,7 +10,8 @@ class PlantCategoryContainer extends Component {
         return(
             <div className="category-container">
                 <NavBar /> <br />
-                <h2>Thinking of adding a new plant? Take a look at these helpful categories.</h2><br />
+                <h2>Thinking of adding a new plant? <br />
+                    Take a look at these helpful categories.</h2><br />
                 <SleepyPlants /><br />
                 <EasyPlants /><br />
                 <HardPlants />

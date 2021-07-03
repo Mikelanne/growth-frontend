@@ -8,11 +8,10 @@ class NewPlantForm extends Component {
     state = {
         nickname: "",
         name: "",
-        careLevel: "",
+        difficulty: "",
         light: "",
         water: "",
         soil: "",
-        toxicToPets: false,
     }
 
     handleChange = (event) => {
@@ -27,14 +26,12 @@ class NewPlantForm extends Component {
     handleOnSubmit = (event) => {
         event.preventDefault()
 
-        console.log(this.state)
-
         this.props.createPlant(this.state)
 
         this.setState({
             nickname: "",
             name: "",
-            careLevel: "",
+            difficulty: "",
             light: "",
             water: "",
             soil: ""
@@ -46,7 +43,7 @@ class NewPlantForm extends Component {
         return (
             <Form className="plant-form" onSubmit={this.handleOnSubmit}>
             <Form.Group>
-                <Form.Label>Nickname</Form.Label><br />
+                <Form.Label className="label">Nickname</Form.Label><br />
                     <input type="text" name="nickname" value={this.state.nickname} onChange={this.handleChange}/>
                 <Form.Text className="text-muted">
                     You can name your plant whatever you want!
@@ -54,7 +51,7 @@ class NewPlantForm extends Component {
             </Form.Group>
                 
             <Form.Group>
-                <Form.Label>Name</Form.Label><br />
+                <Form.Label className="label">Name</Form.Label><br />
                     <input type="text" name="name" value={this.state.name} onChange={this.handleChange}/>
                 <Form.Text className="text-muted">
                     This is the space for the plant's actual name.
@@ -62,25 +59,25 @@ class NewPlantForm extends Component {
             </Form.Group>
 
             <Form.Group>
-                <Form.Label>Care Level</Form.Label><br />
-                    <input type="text" name="careLevel" value={this.state.careLevel} onChange={this.handleChange}/>
+                <Form.Label className="label">Difficulty</Form.Label><br />
+                    <input type="text" name="difficulty" value={this.state.difficulty} onChange={this.handleChange}/>
                 <Form.Text className="text-muted">
                     Beginner, Moderate, or Advanced.
                 </Form.Text>
             </Form.Group>
 
             <Form.Group>
-                <Form.Label>Light</Form.Label><br />
+                <Form.Label className="label">Light</Form.Label><br />
                     <input type="text" name="light" value={this.state.light} onChange={this.handleChange}/>
             </Form.Group>
 
             <Form.Group>
-                <Form.Label>Water</Form.Label><br />
+                <Form.Label className="label">Water</Form.Label><br />
                     <input type="text" name="water" value={this.state.water} onChange={this.handleChange}/>
             </Form.Group>
 
             <Form.Group>
-                <Form.Label>Soil</Form.Label><br />
+                <Form.Label className="label">Soil</Form.Label><br />
                     <input type="text" name="soil" value={this.state.soil} onChange={this.handleChange}/>
             </Form.Group>
             

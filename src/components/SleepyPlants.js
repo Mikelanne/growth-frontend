@@ -8,7 +8,7 @@ const SleepyPlants = () => {
                 <thead>
                     <tr>
                         <th>Plant Name</th>
-                        <th>Care Level</th>
+                        <th>Difficulty</th>
                         <th>Details</th>
                     </tr>
                 </thead>
