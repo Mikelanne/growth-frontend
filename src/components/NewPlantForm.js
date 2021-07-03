@@ -2,6 +2,7 @@ import { Component } from "react";
 import Form from "react-bootstrap/form"
 import {createPlant} from '../actions/plantActions'
 import { connect } from 'react-redux'
+import { Redirect } from "react-router-dom";
 
 class NewPlantForm extends Component {
 
@@ -34,7 +35,7 @@ class NewPlantForm extends Component {
             difficulty: "",
             light: "",
             water: "",
-            soil: ""
+            soil: "",
         })
     }
 
