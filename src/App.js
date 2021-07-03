@@ -19,7 +19,7 @@ function App() {
         <Route exact path="/plants/new">
           <FormContainer />
         </Route>
-        <Route exact path="/plants/info">
+        <Route exact path="/plants/categories">
           <PlantCategoryContainer />
         </Route>
       </Switch>

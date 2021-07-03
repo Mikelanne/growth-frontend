@@ -7,6 +7,11 @@ const NavBar = () => {
     return (
     <Nav variant="tabs" defaultActiveKey="/plants">
         <Nav.Item>
+            <Nav.Link as={Link} to="/">
+                <Button variant="outline-success">Home</Button>
+            </Nav.Link>
+        </Nav.Item>
+        <Nav.Item>
             <Nav.Link as={Link} to="/plants">
                 <Button variant="outline-success">Your Plants</Button>
             </Nav.Link>
@@ -17,7 +22,7 @@ const NavBar = () => {
             </Nav.Link>
         </Nav.Item>
         <Nav.Item>
-            <Nav.Link as={Link} to="/plants/info">
+            <Nav.Link as={Link} to="/plants/categories">
                 <Button variant="outline-success">Other Plant Information</Button>
             </Nav.Link>
         </Nav.Item>

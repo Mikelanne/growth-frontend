@@ -1,10 +1,8 @@
 GOALS:
 [x] New plant form
 [x] Nav Bar
-[] Maintainence page (last time watered and soil changed, able to update)
-    [] add last time watered to db
-    [] be able to update it (patch request)
-[] Adjust styling (colors, placement, cards)
+[x] Plant info page
+[x] Adjust styling (colors, placement, cards)
 
 
 
@@ -22,8 +20,8 @@ Backend requirements:
 Frontend Requirements
 [x] use create-react-app
 [x] Single Page Application with a single HTML file
-[] Five stateless components 
-[] Need at least 3 client side routes
+[x] Five stateless components 
+[x] Need at least 3 client side routes
 [x] Redux and Redux Thunk
 [x] Fetch for post and get
 [x] client side should handle the display of data with minimal data manipulation
