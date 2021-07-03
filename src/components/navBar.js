@@ -8,17 +8,17 @@ const NavBar = () => {
     <Nav variant="tabs" defaultActiveKey="/plants">
         <Nav.Item>
             <Nav.Link as={Link} to="/plants">
-                <Button variant="outline-success">Plants</Button>
+                <Button variant="outline-success">Your Plants</Button>
             </Nav.Link>
         </Nav.Item>
-        {/* <Nav.Item>
-            <Nav.Link eventKey="disabled" disabled>
-                Maintainence
-            </Nav.Link>
-        </Nav.Item> */}
         <Nav.Item>
             <Nav.Link as={Link} to="/plants/new">
                 <Button variant="outline-success">Add a New Plant</Button>
+            </Nav.Link>
+        </Nav.Item>
+        <Nav.Item>
+            <Nav.Link as={Link} to="/plants/info">
+                <Button variant="outline-success">Other Plant Information</Button>
             </Nav.Link>
         </Nav.Item>
     </Nav>

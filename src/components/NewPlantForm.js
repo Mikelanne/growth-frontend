@@ -16,20 +16,11 @@ class NewPlantForm extends Component {
     }
 
     handleChange = (event) => {
-
-        if (event.target.name !== "toxicToPets"){
-            const name = event.target.name
-            const value = event.target.value
-            this.setState({
-                [name]: value
-            }, console.log(this.state))
-        } else {
-            const name = event.target.name
-            const value = true
-            this.setState({
-                [name]: value
-            }, console.log(this.state))
-        }
+        const name = event.target.name
+        const value = event.target.value
+        this.setState({
+            [name]: value
+        }, console.log(this.state))
     }
       
 
@@ -46,8 +37,7 @@ class NewPlantForm extends Component {
             careLevel: "",
             light: "",
             water: "",
-            soil: "",
-            toxicToPets: false,
+            soil: ""
         })
     }
 
@@ -92,11 +82,6 @@ class NewPlantForm extends Component {
             <Form.Group>
                 <Form.Label>Soil</Form.Label><br />
                     <input type="text" name="soil" value={this.state.soil} onChange={this.handleChange}/>
-            </Form.Group>
-
-            <Form.Group>
-                <Form.Label>Check this box if the plant is poisonous to pets</Form.Label><br />
-                    <input type="checkbox" name="toxicToPets" value={this.state.toxicToPets} onChange={this.handleChange}/>
             </Form.Group>
             
              <input type="submit" value="Add Plant"/>

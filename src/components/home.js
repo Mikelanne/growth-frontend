@@ -1,7 +1,6 @@
 import { Jumbotron } from "react-bootstrap"
 import { Button } from "react-bootstrap"
-import {BrowserRouter as Router, Switch, Route, Link} from 'react-router-dom'
-import {LinkContainer} from 'react-router-bootstrap'
+import {Link} from 'react-router-dom'
 
 
 const Home = () => {

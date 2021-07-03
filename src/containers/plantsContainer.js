@@ -30,9 +30,9 @@ class PlantsContainer extends Component {
     render(){
         return (
             <div>
-                <NavBar />
-                <h1>Your Plants</h1>
-            <Container>
+            <NavBar />
+            <h1>Your Plants</h1>
+            <Container fluid="md">
                 <Row>
                     {this.makePlantCards()}
                 </Row>
